@@ -1,0 +1,67 @@
+set up instruction
+--------------------
+- install intellij ide
+- install jdk
+- install maven
+- generate springboot project in start.spring.io (with dependency springweb, mongodb) and download the .zip
+- open the project in intelliJ
+- point kotlin project to jdk
+- install docker
+- install a docker image for mongodb
+- start mongo db instance - docker run --name mymongodb -d -p 27017:27017 mongo
+- install redis simple plugin and connect to mongodb from kotlin (localhost:27017)
+- documentation using swagger
+    - add swagger2 spring dependency
+
+
+
+
+learning videos
+================
+- kotlin language
+Udemy : https://www.udemy.com/course/kotlin-for-java-developers/ (deep reading)
+Youtube : https://www.youtube.com/watch?v=fsNhjYgXxlg (quick course)
+- springboot with java
+https://www.youtube.com/watch?v=msXL2oDexqw&list=PLqq-6Pq4lTTbx8p2oCgcAQGQyqN8XeA1x
+- springboot with kotlin
+https://www.youtube.com/watch?v=bygOv690Jpk
+- swagger configuration in springboot
+https://www.youtube.com/watch?v=gduKpLW_vdY
+
+
+
+
+
+Kotlin co-routines (to write async coding)
+===========================================
+https://www.youtube.com/watch?v=_hfBv0a09Jc
+https://www.youtube.com/watch?v=jT2gHPQ4Z1Q
+
+
+
+Hexagonal architecture
+=========================
+Theory : https://beyondxscratch.com/2017/08/19/hexagonal-architecture-the-practical-guide-for-a-clean-architecture/
+practical : https://beyondxscratch.com/2020/08/23/hexagonal-architecture-example-digging-a-spring-boot-implementation/
+code base : https://gitlab.com/crafts-records/talkadvisor/talkadvisor-back
+
+maven enforcer plugin
+======================
+http://maven.apache.org/enforcer/maven-enforcer-plugin/usage.html
+
+spring webflux
+================
+https://www.youtube.com/watch?v=M3jNn3HMeWg
+java future<employee> is async but the moment we call future.get () it becomes blocking. so java completablefuture is a better choice; in
+spring we call it mono (0..1)  and flux (0...N)
+
+
+
+questions
+- how to turn on suspend features in the code
+- how can we avoid the model to have mongo dependency in the form of Document annotation
+-
+
+
+
+
